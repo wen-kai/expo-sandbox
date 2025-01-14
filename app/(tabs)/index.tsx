@@ -13,7 +13,7 @@ export default function HomeScreen() {
 
   return (
     <View
-      style={{ flex: 1, backgroundColor: 'black' }}
+      style={{ flex: 1, backgroundColor: 'white' }}
     >
         <View
             style={{

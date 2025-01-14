@@ -19,34 +19,6 @@ export default function HomeScreen() {
     <View
       style={{ flex: 1, backgroundColor: 'black' }}
     >
-    {/*<View*/}
-    {/*    style={{*/}
-    {/*        position: 'absolute',*/}
-    {/*        top: 100,*/}
-    {/*        left: 100,*/}
-    {/*        transform: [*/}
-    {/*            { scale: 100 },*/}
-    {/*        ],*/}
-    {/*    }}*/}
-    {/*>*/}
-    {/*    <View*/}
-    {/*        style={{*/}
-    {/*            transform: [*/}
-    {/*                { scale: 0.01 },*/}
-    {/*            ],*/}
-    {/*        }}*/}
-    {/*    >*/}
-    {/*        <View*/}
-    {/*            style={{*/}
-    {/*                transform: [*/}
-    {/*                    { scale: 1 },*/}
-    {/*                ],*/}
-    {/*            }}*/}
-    {/*        >*/}
-    {/*            <View style={{ width: 100, height: 100, borderWidth: 3, borderColor: 'blue', backgroundColor: 'red' }} />*/}
-    {/*        </View>*/}
-    {/*    </View>*/}
-    {/*</View>*/}
     <View style={{ width, height }}>
         <FlatList
             data={[
@@ -70,40 +42,6 @@ export default function HomeScreen() {
                 setViewableIndex(viewableItem?.index);
             }}
             renderItem={({ item, index }) => (
-                // <View style={{ width, height }}>
-                //     <FlatList
-                //         horizontal
-                //         data={[item.video1, item.video2]}
-                //         snapToOffsets={[0, width]}
-                //         snapToAlignment={'start'}
-                //         onViewableItemsChanged={({ viewableItems }) => {
-                //             const viewableItem = viewableItems.find(i => i.isViewable);
-                //             setViewableIndexNested(viewableItem?.index);
-                //         }}
-                //         renderItem={nestedItem => (
-                //             <View style={{ width, height }}>
-                //                 <VideoPlayer
-                //                     style={{ width, height }}
-                //                     source={nestedItem.item}
-                //                     shouldPlay={shouldPlay && viewableIndex === index && viewableIndexNested === nestedItem.index}
-                //                     isFullscreen={fullscreenIndex === index && viewableIndexNested === nestedItem.index}
-                //                     onFullscreenExit={() => setFullScreenIndex(null)}
-                //                 />
-                //
-                //                 {/* FULLSCREEN & PLAY BUTTONS */}
-                //                 <View style={{ position: 'absolute', bottom: 50, right: 50 }}>
-                //                     <TouchableOpacity onPress={() => setFullScreenIndex(index)}>
-                //                         <ThemedText type="title">Fullscreen</ThemedText>
-                //                     </TouchableOpacity>
-                //
-                //                     <TouchableOpacity onPress={() => setShouldPlay(!shouldPlay)}>
-                //                         <ThemedText type="title">{shouldPlay ? 'Pause' : 'Play'}</ThemedText>
-                //                     </TouchableOpacity>
-                //                 </View>
-                //             </View>
-                //         )}
-                //     />
-                // </View>
                 <View style={{ width, height }}>
                     <VideoPlayer
                         style={{ width, height }}
